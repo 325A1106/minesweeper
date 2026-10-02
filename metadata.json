@@ -1,0 +1,6 @@
+{
+  "name": "Pixel Minesweeper 95 - レトロピクセル・マインスイーパー",
+  "description": "難易度調整、スコアランキング、CRTレトロテーマ、8-bitサウンド、本格ピクセルアートUIを備えたクラシックマインスイーパー",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

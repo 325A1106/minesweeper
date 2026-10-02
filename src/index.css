@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'DotGothic16', monospace;
+  }
+  .font-arcade {
+    font-family: 'Press Start 2P', monospace;
+  }
+  .font-digital {
+    font-family: 'VT323', monospace;
+  }
+  .pixelated {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Classic Retro Windows 95 Bevel Effects */
+.retro-outset {
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #7b7b7b;
+  border-bottom: 2px solid #7b7b7b;
+}
+
+.retro-inset {
+  border-top: 2px solid #7b7b7b;
+  border-left: 2px solid #7b7b7b;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.retro-window-border {
+  border-top: 3px solid #dfdfdf;
+  border-left: 3px solid #dfdfdf;
+  border-right: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  box-shadow: inset 1px 1px 0px #ffffff, inset -1px -1px 0px #7b7b7b;
+}
+
+.retro-field-border {
+  border-top: 3px solid #7b7b7b;
+  border-left: 3px solid #7b7b7b;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+
+/* CRT Scanlines Overlay */
+.crt-overlay::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 40;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+/* Custom scrollbar for retro feel */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #c0c0c0;
+  border-top: 1px solid #7b7b7b;
+  border-left: 1px solid #7b7b7b;
+}
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #7b7b7b;
+  border-bottom: 2px solid #7b7b7b;
+}
+
